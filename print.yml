@@ -1,6 +1,7 @@
 - name: Print all available facts
   hosts: localhost
+  gather_facts: false
   tasks: 
-  - name : Print all hosts vars
+  - name : Print Hello world 2
     debug:
-      var: ansible_facts
+      msg: "Hello World 2"
