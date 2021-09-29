@@ -4,10 +4,6 @@
   gather_facts: false
 
   tasks:
-    - name: Ensure ansible user doesn't exists
-      user:
-        name: ansible
-        state: absent
-
-    - name: Test host connectivity
-      ping:
+    - name: Print Hello world
+      debug: 
+      msg: "Hello World"
